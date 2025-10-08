@@ -3,6 +3,9 @@ body {
 }
 h1 {
   font-weight: 700;
+  text-align: center;
+  font-size: revert;
+  margin: revert-layer;
 }
 h2 {
   font-weight: 500;
@@ -13,3 +16,12 @@ h3 {
 h4 {
   font-weight: 300;
 }
+
+   ul.hr {
+    text-align: center;
+    margin: 0;
+   }
+   ul.hr li {
+    display: inline; 
+    margin: 5%;
+   }
