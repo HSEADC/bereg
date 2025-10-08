@@ -158,6 +158,12 @@ body {
 }
 h1 {
   font-weight: 700;
+<<<<<<< HEAD
+=======
+  text-align: center;
+  font-size: revert;
+  margin: revert-layer;
+>>>>>>> main
 }
 h2 {
   font-weight: 500;
@@ -169,5 +175,17 @@ h4 {
   font-weight: 300;
 }
 
+<<<<<<< HEAD
+=======
+   ul.hr {
+    text-align: center;
+    margin: 0;
+   }
+   ul.hr li {
+    display: inline; 
+    margin: 5%;
+   }
+
+>>>>>>> main
 
 
