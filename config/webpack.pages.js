@@ -21,7 +21,8 @@ const htmlPages = [
   createPage('./src/pages/articles/article3.html','./pages/articles/article3.html'),
   createPage('./src/pages/rituals/ritual1.html','./pages/rituals/ritual1.html'),
   createPage('./src/pages/rituals/ritual2.html','./pages/rituals/ritual2.html'),
-  createPage('./src/pages/rituals/ritual3.html','./pages/rituals/ritual3.html')
+  createPage('./src/pages/rituals/ritual3.html','./pages/rituals/ritual3.html'),
+  createPage('./src/pages/plug.html','./pages/plug.html')
 ]
 
 module.exports = htmlPages

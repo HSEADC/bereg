@@ -200,7 +200,7 @@ p {
   line-height: 24rem;
 }
 
-#index {
+#index, #plug{
   display: flex;
   flex-direction: column;
   gap: 80rem;
@@ -210,6 +210,14 @@ p {
   background-image: url(images/650a9f35628061b50d55.svg), linear-gradient(180deg, #F9F5E9 20%, #A2BCE8 100%);
   background-size: cover;
   background-position: center;
+}
+
+#plug{
+height: 100vh;
+margin: 0;
+background-image: url(images/1c6e0350487c6636ba27.png), linear-gradient(180deg, #F9F5E9 20%, #A2BCE8 100%);
+background-position: right;
+justify-content: space-between;
 }
 
 #indexP{
@@ -224,13 +232,18 @@ p {
   color: #283C74;
 }
 
-#indexForm{
+#indexForm, #plugForm{
   display: flex;
   height: 206rem;
   justify-content: flex-start;
   flex-direction: column;
   padding: 0 392rem;
   align-items: flex-start;
+}
+
+#plugForm {
+    padding: 0 69rem;
+    margin-bottom: 25rem;
 }
 
 #indexForm p{
@@ -255,7 +268,7 @@ h4#my-form-status{
   margin: 12rem 0 0 24rem;
   color: #41599D;
 }
-#index form input {
+#index form input, #plug form input {
   display: flex;
   padding: 7.5rem 15rem;
   align-items: center;
@@ -271,12 +284,12 @@ h4#my-form-status{
   border: 2rem solid transparent;
   transition: border ease 0.4s;
 }
-#index form input:focus {
+#index form input:focus, #plug form input:focus {
   border: 2rem solid #859DC6;
   transition: border ease 0.8s;
 }
 
-#index form button {
+#index form button, #plug form button {
   display: flex;
   padding: 7.5rem 25rem;
   justify-content: center;
@@ -293,7 +306,7 @@ h4#my-form-status{
   border: 0rem solid #41599D;
   transition: all ease 0.4s;
 }
-#index form button:hover {
+#index form button:hover, #plug form button:hover {
   background-color: #41599D;
   border: 0rem solid #41599D;
   transition: all ease 0.8s;
@@ -313,10 +326,16 @@ h4#my-form-status{
   display: none;
 }
 
-#indexMedia{
+#indexMedia, #plugMedia{
   display: flex;
   align-items: center;
   gap: 12rem;
+}
+
+#plugMedia{
+  position: absolute;
+  right: 69rem;
+  bottom: 62rem;
 }
 
 #indexMedia .media, .media{
@@ -325,6 +344,12 @@ h4#my-form-status{
   backdrop-filter: blur(4px);
   border-radius: 50rem;
   cursor: pointer;
+}
+
+#plugMedia .media{
+  width: 54rem;
+  height: 54rem;
+  opacity: 0.8;
 }
 
 #indexHeader .logo, #indexHeaderMob .logo{
@@ -427,6 +452,32 @@ h4#my-form-status{
 
 #card:hover {
   z-index: 10;
+}
+
+#bereg{
+  padding-left: 69rem;
+  margin-top: 165rem;
+}
+
+.bereg_log{
+  height: 124rem;
+}
+
+#bereg h1{
+  font-size: 40rem;
+  color: #F4A85C;
+  margin-top: -33rem;
+  margin-left: 100rem;
+  font-weight: 400;
+}
+
+#plugForm p{
+  width: 500rem;
+  color: #41599D;
+}
+
+#plugForm #my-form{
+  width: 555rem;
 }
 @media screen and (max-width: 780px) {
 html {
@@ -593,6 +644,11 @@ html {
   gap: 10rem;
   margin-top: 20rem;
   cursor: pointer;
+}
+
+#indexMediaMob .media, .media {
+    width: 45rem;
+    height: 45rem;
 }
 }
 

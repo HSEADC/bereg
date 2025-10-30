@@ -164,4 +164,9 @@ html {
   margin-top: 20rem;
   cursor: pointer;
 }
+
+#indexMediaMob .media, .media {
+    width: 45rem;
+    height: 45rem;
+}
 }
