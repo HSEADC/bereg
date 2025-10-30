@@ -1,0 +1,167 @@
+@media screen and (max-width: 780px) {
+html {
+  font-size: calc(1vw / 6);
+}
+
+#indexHeader {
+  padding: 15rem 32rem 7.5rem 32rem;
+}
+
+#index {
+  gap: 70rem;
+  margin-bottom: 30rem;
+}
+
+#indexMedia {
+    gap: 8rem;
+}
+
+#indexP {
+  padding-top: 192rem;
+  justify-content: flex-start;
+  margin-left: 32rem;
+  align-items: center;
+}
+
+#indexP p {
+    width: 346rem;
+}
+
+#indexCards {
+    height: 720rem;
+}
+
+.card_1{
+  margin-top: 5rem;
+  margin-left: 45rem;
+}
+
+.card_2{
+  margin-top: 0;
+  margin-left: 216rem;
+}
+
+.card_3{
+  margin-top: 100rem;
+  margin-left: 310rem;
+}
+
+.card_4{
+  transform: rotate(7.887deg);
+  margin-top: 275rem;
+  margin-left: 20rem;
+}
+
+.card_5{
+  margin-top: 420rem;
+  margin-left: 125rem;
+  z-index: 3;
+}
+
+.card_6{
+  margin-top: 350rem;
+  margin-left: 315rem;
+}
+
+.card_7{
+  margin-top: 260rem;
+  margin-left: 175rem;
+}
+
+#indexForm {
+  height: 206rem;
+  padding: 0 32rem;
+}
+
+#my-form {
+    width: 525rem;
+}
+}
+
+@media screen and (max-width: 440px) {
+  html {
+    font-size: calc(1vw / 4);
+  }
+
+  #indexHeaderMob {
+  padding: 15rem 32rem 7.5rem 32rem;
+}
+
+#index {
+  gap: 70rem;
+  margin-bottom: 30rem;
+}
+
+#indexMedia {
+  display: none;
+  gap: 10rem;
+  flex-direction: column;
+}
+
+#indexP {
+  padding-top: 170rem;
+  justify-content: flex-start;
+  margin-left: 18rem;
+  align-items: center;
+}
+
+#indexP p {
+    width: 346rem;
+}
+
+#indexCards {
+  height: 2085rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#card{
+  position: relative;
+}
+
+.card_1, .card_2, .card_3, .card_4, .card_5, .card_6, .card_7{
+  margin-top: 0rem;
+  margin-left: 0rem;
+}
+
+#indexForm {
+  height: 300rem;
+  padding: 0 18rem;
+}
+
+#indexForm h1{
+  width: 310rem;
+}
+
+#indexForm p{
+  width: 340rem;
+}
+
+#my-form {
+  width: 365rem;
+  padding: 10rem;
+  align-items: center;
+  gap: 7.5rem;
+  border-radius: 26rem;
+  margin-top: 22.5rem;
+  flex-direction: column;
+}
+
+#indexHeader{
+  display: none;
+}
+
+#indexHeaderMob{
+  display: flex;
+  align-items: flex-start;
+}
+
+#menu{
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  margin-top: 20rem;
+  cursor: pointer;
+}
+}

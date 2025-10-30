@@ -1,24 +1,35 @@
 @font-face {
-  font-family: 'PT Root UI';
-  src: url('../fonts/pt-root-ui_bold.woff'),
-    url('../fonts/pt-root-ui_bold.woff2');
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-ExtraBold.ttf');
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-Bold.ttf');
   font-weight: 700;
 }
 @font-face {
-  font-family: 'PT Root UI';
-  src: url('../fonts/pt-root-ui_medium.woff'),
-    url('../fonts/pt-root-ui_medium.woff2');
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-SemiBold.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-Medium.ttf');
   font-weight: 500;
 }
 @font-face {
-  font-family: 'PT Root UI';
-  src: url('../fonts/pt-root-ui_regular.woff'),
-    url('../fonts/pt-root-ui_regular.woff2');
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-Regular.ttf');
   font-weight: 400;
 }
 @font-face {
-  font-family: 'PT Root UI';
-  src: url('../fonts/pt-root-ui_light.woff'),
-    url('../fonts/pt-root-ui_light.woff2');
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-Light.ttf');
   font-weight: 300;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url('../fonts/Manrope-ExtraLight.ttf');
+  font-weight: 200;
 }
