@@ -1,27 +1,260 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: calc(1vw / 14.4);
+}
 body {
-  font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
+  font-family: 'Manrope';
 }
 h1 {
-  font-weight: 700;
-  text-align: center;
-  font-size: revert;
-  margin: revert-layer;
-}
-h2 {
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 30rem;
+  line-height: 39rem;
+  color: #283C74;
 }
 h3 {
   font-weight: 400;
 }
 h4 {
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 15rem;
+  line-height: 20.25rem;
+  color: #283C74;
+}
+h5 {
+  font-weight: 400;
+  font-size: 12rem;
+  line-height: 15rem;
+  color: #41599D;
+}
+p {
+  font-weight: 400;
+  font-size: 18rem;
+  line-height: 24rem;
+}
+/* стилия для заглушки */
+#index {
+  display: flex;
+  flex-direction: column;
+  gap: 80rem;
+  margin-bottom: 30rem;
+  width: 100%;
+  background: #F9F5E9;
+  background-image: url("../images/fon.svg"), linear-gradient(180deg, #F9F5E9 20%, #A2BCE8 100%);
+  background-size: cover;
+  background-position: center;
 }
 
-   ul.hr {
-    text-align: center;
-    margin: 0;
-   }
-   ul.hr li {
-    display: inline; 
-    margin: 5%;
-   }
+#indexP{
+  display: flex;
+  padding-top: 192rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#indexP p {
+  width: 435rem;
+  color: #283C74;
+}
+
+#indexForm{
+  display: flex;
+  height: 206rem;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0 392rem;
+  align-items: flex-start;
+}
+
+#indexForm p{
+  width: 450rem;
+  margin-top: 6rem;
+  color: #41599D;
+}
+
+#my-form{
+  display: flex;
+  width: 645rem;
+  padding: 7.5rem;
+  align-items: center;
+  gap: 7.5rem;
+  border-radius: 50rem;
+  margin-top: 22.5rem;
+  background: #F9F5E9;
+  justify-content: space-between;
+}
+
+h4#my-form-status{
+  margin: 12rem 0 0 24rem;
+  color: #41599D;
+}
+#index form input {
+  display: flex;
+  padding: 7.5rem 15rem;
+  align-items: center;
+  flex: 1 0 0;
+  border-radius: 50rem;
+  background:#D1DCEE;
+  font-family: 'Manrope';
+  font-weight: 400;
+  align-self: stretch;
+  font-size: 18rem;
+  line-height: 24rem;
+  color: #6A7FA4;
+  border: 2rem solid transparent;
+  transition: border ease 0.4s;
+}
+#index form input:focus {
+  border: 2rem solid #859DC6;
+  transition: border ease 0.8s;
+}
+
+#index form button {
+  display: flex;
+  padding: 7.5rem 25rem;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Manrope';
+  font-weight: 600;
+  font-size: 18rem;
+  line-height: 24rem;
+  color: #F9F5E9;
+  align-self: stretch;
+  border-radius: 50rem;
+  background:#283C74;
+  cursor: pointer;
+  border: 0rem solid #41599D;
+  transition: all ease 0.4s;
+}
+#index form button:hover {
+  background-color: #41599D;
+  border: 0rem solid #41599D;
+  transition: all ease 0.8s;
+}
+
+#indexHeader, #indexHeaderMob{
+  display: flex;
+  width: 100%;
+  padding: 15rem 69rem 7.5rem 69rem;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 15;
+}
+
+#indexMedia{
+  display: flex;
+  align-items: center;
+  gap: 12rem;
+}
+
+#indexMedia .media, .media{
+  width: 34rem;
+  height: 34rem;
+  backdrop-filter: blur(4px);
+  border-radius: 50rem;
+  cursor: pointer;
+}
+
+#indexHeader .logo, #indexHeaderMob .logo{
+  width: 120rem;
+  height: 67.5rem;
+}
+
+#indexNav{
+  display: flex;
+  padding: 6.75rem 15rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50rem;
+  background: rgba(249, 219, 179, 0.60);
+  backdrop-filter: blur(4px);
+}
+
+#indexCards{
+  height: 474rem;
+}
+
+#card{
+  display: flex;
+  position: absolute;
+  width: 225rem;
+  padding: 12rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7.5rem;
+  border-radius: 22.5rem;
+  background: #F9F5E9;
+  box-shadow: 6px 4px 6.9px 0 rgba(59, 94, 126, 0.25);
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+}
+
+#card .cardImg{
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 15rem 15rem 4.5rem 4.5rem;
+}
+
+#card h4{
+  line-height: 18rem;
+  font-weight: 600;
+}
+
+#card .cardText{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  align-self: stretch;
+}
+
+.card_1{
+  transform: rotate(11.18deg);
+  margin-top: 94rem;
+  margin-left: 165rem;
+}
+
+.card_2{
+  transform: rotate(-0.758deg);
+  margin-top: 42rem;
+  margin-left: 336rem;
+  z-index: 1;
+}
+
+.card_3{
+  transform: rotate(-25.49deg);
+  margin-top: 140rem;
+  margin-left: 420rem;
+  z-index: 2;
+}
+
+.card_4{
+  transform: rotate(7.887deg);
+  margin-top: 21rem;
+  margin-left: 609rem;
+}
+
+.card_5{
+  transform: rotate(-0.99deg);
+  margin-top: 168rem;
+  margin-left: 705rem;
+  z-index: 1;
+}
+
+.card_6{
+  transform: rotate(9.654deg);
+  margin-top: 84rem;
+  margin-left: 840rem;
+}
+
+.card_7{
+  transform: rotate(-14.2deg);
+  margin-top: 10rem;
+  margin-left: 985rem;
+}
+
+#card:hover {
+  z-index: 10;
+}
