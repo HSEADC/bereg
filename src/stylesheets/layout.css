@@ -33,7 +33,7 @@ p {
   font-size: 18rem;
   line-height: 24rem;
 }
-/* стилия для заглушки */
+
 #index {
   display: flex;
   flex-direction: column;
@@ -141,6 +141,10 @@ h4#my-form-status{
   align-items: center;
   position: fixed;
   z-index: 15;
+}
+
+#indexHeaderMob{
+  display: none;
 }
 
 #indexMedia{

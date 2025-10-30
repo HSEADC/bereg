@@ -199,7 +199,7 @@ p {
   font-size: 18rem;
   line-height: 24rem;
 }
-/* стилия для заглушки */
+
 #index {
   display: flex;
   flex-direction: column;
@@ -207,21 +207,11 @@ p {
   margin-bottom: 30rem;
   width: 100%;
   background: #F9F5E9;
-  background-image: url(images/8006efa73a737a2b19f9.svg), linear-gradient(180deg, #F9F5E9 20%, #A2BCE8 100%);
+  background-image: url(images/650a9f35628061b50d55.svg), linear-gradient(180deg, #F9F5E9 20%, #A2BCE8 100%);
   background-size: cover;
   background-position: center;
 }
 
-<<<<<<< HEAD
-ul.hr {
- text-align: center;
- margin: 0;
-}
-ul.hr li {
- display: inline; 
- margin: 5%;
-}
-=======
 #indexP{
   display: flex;
   padding-top: 192rem;
@@ -317,6 +307,10 @@ h4#my-form-status{
   align-items: center;
   position: fixed;
   z-index: 15;
+}
+
+#indexHeaderMob{
+  display: none;
 }
 
 #indexMedia{
@@ -602,6 +596,5 @@ html {
 }
 }
 
->>>>>>> main
 
 
