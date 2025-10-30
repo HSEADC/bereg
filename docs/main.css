@@ -129,28 +129,39 @@ table {
 }
 
 @font-face {
-  font-family: 'PT Root UI';
-  src: url(fonts/f82344daaacb5424b169.woff),
-    url(fonts/f31c5219b0912845f393.woff2);
+  font-family: 'Manrope';
+  src: url(fonts/416b7dd6613bd085809e.ttf);
+  font-weight: 800;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url(fonts/8ff9467ebe1ff26e4261.ttf);
   font-weight: 700;
 }
 @font-face {
-  font-family: 'PT Root UI';
-  src: url(fonts/e24244df074291681cd3.woff),
-    url(fonts/6f2ccf4ac327e1d6507e.woff2);
+  font-family: 'Manrope';
+  src: url(fonts/c3189b18688e4f3e0d86.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url(fonts/7466db90c04f3efe29bf.ttf);
   font-weight: 500;
 }
 @font-face {
-  font-family: 'PT Root UI';
-  src: url(fonts/ea7178e3e5d27a1d3248.woff),
-    url(fonts/b43dba986b9cde356afd.woff2);
+  font-family: 'Manrope';
+  src: url(fonts/3d92b64331e124bd334e.ttf);
   font-weight: 400;
 }
 @font-face {
-  font-family: 'PT Root UI';
-  src: url(fonts/8bf08d3a5b04f523d0d4.woff),
-    url(fonts/f0497492db8214d4938e.woff2);
+  font-family: 'Manrope';
+  src: url(fonts/8e69558513c71d8098f1.ttf);
   font-weight: 300;
+}
+@font-face {
+  font-family: 'Manrope';
+  src: url(fonts/6b8aa569524907093d27.ttf);
+  font-weight: 200;
 }
 
 * {
@@ -160,99 +171,425 @@ html {
   font-size: calc(1vw / 14.4);
 }
 body {
-  font-family: 'PT Root UI', Arial, Helvetica, sans-serif;
+  font-family: 'Manrope';
 }
-
+h1 {
+  font-weight: 600;
+  font-size: 30rem;
+  line-height: 39rem;
+  color: #283C74;
+}
 h3 {
   font-weight: 400;
 }
 h4 {
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 15rem;
+  line-height: 20.25rem;
+  color: #283C74;
+}
+h5 {
+  font-weight: 400;
+  font-size: 12rem;
+  line-height: 15rem;
+  color: #41599D;
+}
+p {
+  font-weight: 400;
+  font-size: 18rem;
+  line-height: 24rem;
 }
 /* стилия для заглушки */
 #index {
   display: flex;
+  flex-direction: column;
+  gap: 80rem;
+  margin-bottom: 30rem;
+  width: 100%;
+  background: #F9F5E9;
+  background-image: url(images/8006efa73a737a2b19f9.svg), linear-gradient(180deg, #F9F5E9 20%, #A2BCE8 100%);
+  background-size: cover;
+  background-position: center;
+}
+
+#indexP{
+  display: flex;
+  padding-top: 192rem;
   justify-content: center;
   align-items: center;
 }
-#indexWrapper {
-  margin-top: 20rem;
-  width: 1400rem;
-  height: 96vh;
-  border-radius: 40rem;
-  background-color: rgb(40, 20, 126);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-#index h1 {
-  font-weight: 700;
-  font-size: 250rem;
-  color: #eee;
-  display: block;
-  margin: 0 auto;
-}
-#index h2 {
-  font-weight: 500;
-  font-size: 58rem;
-  line-height: 64rem;
-  color: #eee;
-  margin-bottom: 40rem;
-}
-#index p {
-  font-weight: 400;
-  font-size: 28rem;
-  line-height: 36rem;
-  color: #eee;
-  margin: 20rem 0;
-}
-.indexContainer {
-  display: flex;
-}
-.indexContainerInfo {
-  padding: 60rem 20rem;
-  width: 60%;
-}
-.indexContainerImage {
-  width: 40%;
-  padding-top: 20rem;
-}
-.indexContainerImage img {
-  width: 56%;
-  display: block;
-  margin: 0 auto;
-  transition: transform ease 1s;
-}
-.indexContainerImage img:hover {
-  transform: translateX(-60rem) translateY(40rem);
-  transition: transform ease 1s;
+
+#indexP p {
+  width: 435rem;
+  color: #283C74;
 }
 
-@media screen and (max-width: 780px) {
-  html {
-    font-size: calc(1vw / 6);
-  }
-  #indexWrapper {
-    width: calc(100% - 40rem);
-    margin: 20rem;
-    height: fit-content;
-  }
-  .indexContainer {
-    flex-direction: column;
-  }
-  .indexContainer > div {
-    width: 100%;
-  }
-  #index h1 {
-    font-size: 100rem;
-    margin-top: 40rem;
-  }
+#indexForm{
+  display: flex;
+  height: 206rem;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0 392rem;
+  align-items: flex-start;
 }
-@media screen and (max-width: 1280px) {
-  #indexWrapper {
-    justify-content: flex-end;
-    gap: 100rem;
+
+#indexForm p{
+  width: 450rem;
+  margin-top: 6rem;
+  color: #41599D;
+}
+
+#my-form{
+  display: flex;
+  width: 645rem;
+  padding: 7.5rem;
+  align-items: center;
+  gap: 7.5rem;
+  border-radius: 50rem;
+  margin-top: 22.5rem;
+  background: #F9F5E9;
+  justify-content: space-between;
+}
+
+h4#my-form-status{
+  margin: 12rem 0 0 24rem;
+  color: #41599D;
+}
+#index form input {
+  display: flex;
+  padding: 7.5rem 15rem;
+  align-items: center;
+  flex: 1 0 0;
+  border-radius: 50rem;
+  background:#D1DCEE;
+  font-family: 'Manrope';
+  font-weight: 400;
+  align-self: stretch;
+  font-size: 18rem;
+  line-height: 24rem;
+  color: #6A7FA4;
+  border: 2rem solid transparent;
+  transition: border ease 0.4s;
+}
+#index form input:focus {
+  border: 2rem solid #859DC6;
+  transition: border ease 0.8s;
+}
+
+#index form button {
+  display: flex;
+  padding: 7.5rem 25rem;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Manrope';
+  font-weight: 600;
+  font-size: 18rem;
+  line-height: 24rem;
+  color: #F9F5E9;
+  align-self: stretch;
+  border-radius: 50rem;
+  background:#283C74;
+  cursor: pointer;
+  border: 0rem solid #41599D;
+  transition: all ease 0.4s;
+}
+#index form button:hover {
+  background-color: #41599D;
+  border: 0rem solid #41599D;
+  transition: all ease 0.8s;
+}
+
+#indexHeader, #indexHeaderMob{
+  display: flex;
+  width: 100%;
+  padding: 15rem 69rem 7.5rem 69rem;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 15;
+}
+
+#indexMedia{
+  display: flex;
+  align-items: center;
+  gap: 12rem;
+}
+
+#indexMedia .media, .media{
+  width: 34rem;
+  height: 34rem;
+  backdrop-filter: blur(4px);
+  border-radius: 50rem;
+  cursor: pointer;
+}
+
+#indexHeader .logo, #indexHeaderMob .logo{
+  width: 120rem;
+  height: 67.5rem;
+}
+
+#indexNav{
+  display: flex;
+  padding: 6.75rem 15rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50rem;
+  background: rgba(249, 219, 179, 0.60);
+  backdrop-filter: blur(4px);
+}
+
+#indexCards{
+  height: 474rem;
+}
+
+#card{
+  display: flex;
+  position: absolute;
+  width: 225rem;
+  padding: 12rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7.5rem;
+  border-radius: 22.5rem;
+  background: #F9F5E9;
+  box-shadow: 6px 4px 6.9px 0 rgba(59, 94, 126, 0.25);
+  transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.4s;
+}
+
+#card .cardImg{
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 15rem 15rem 4.5rem 4.5rem;
+}
+
+#card h4{
+  line-height: 18rem;
+  font-weight: 600;
+}
+
+#card .cardText{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  align-self: stretch;
+}
+
+.card_1{
+  transform: rotate(11.18deg);
+  margin-top: 94rem;
+  margin-left: 165rem;
+}
+
+.card_2{
+  transform: rotate(-0.758deg);
+  margin-top: 42rem;
+  margin-left: 336rem;
+  z-index: 1;
+}
+
+.card_3{
+  transform: rotate(-25.49deg);
+  margin-top: 140rem;
+  margin-left: 420rem;
+  z-index: 2;
+}
+
+.card_4{
+  transform: rotate(7.887deg);
+  margin-top: 21rem;
+  margin-left: 609rem;
+}
+
+.card_5{
+  transform: rotate(-0.99deg);
+  margin-top: 168rem;
+  margin-left: 705rem;
+  z-index: 1;
+}
+
+.card_6{
+  transform: rotate(9.654deg);
+  margin-top: 84rem;
+  margin-left: 840rem;
+}
+
+.card_7{
+  transform: rotate(-14.2deg);
+  margin-top: 10rem;
+  margin-left: 985rem;
+}
+
+#card:hover {
+  z-index: 10;
+}
+@media screen and (max-width: 780px) {
+html {
+  font-size: calc(1vw / 6);
+}
+
+#indexHeader {
+  padding: 15rem 32rem 7.5rem 32rem;
+}
+
+#index {
+  gap: 70rem;
+  margin-bottom: 30rem;
+}
+
+#indexMedia {
+    gap: 8rem;
+}
+
+#indexP {
+  padding-top: 192rem;
+  justify-content: flex-start;
+  margin-left: 32rem;
+  align-items: center;
+}
+
+#indexP p {
+    width: 346rem;
+}
+
+#indexCards {
+    height: 720rem;
+}
+
+.card_1{
+  margin-top: 5rem;
+  margin-left: 45rem;
+}
+
+.card_2{
+  margin-top: 0;
+  margin-left: 216rem;
+}
+
+.card_3{
+  margin-top: 100rem;
+  margin-left: 310rem;
+}
+
+.card_4{
+  transform: rotate(7.887deg);
+  margin-top: 275rem;
+  margin-left: 20rem;
+}
+
+.card_5{
+  margin-top: 420rem;
+  margin-left: 125rem;
+  z-index: 3;
+}
+
+.card_6{
+  margin-top: 350rem;
+  margin-left: 315rem;
+}
+
+.card_7{
+  margin-top: 260rem;
+  margin-left: 175rem;
+}
+
+#indexForm {
+  height: 206rem;
+  padding: 0 32rem;
+}
+
+#my-form {
+    width: 525rem;
+}
+}
+
+@media screen and (max-width: 440px) {
+  html {
+    font-size: calc(1vw / 4);
   }
+
+  #indexHeaderMob {
+  padding: 15rem 32rem 7.5rem 32rem;
+}
+
+#index {
+  gap: 70rem;
+  margin-bottom: 30rem;
+}
+
+#indexMedia {
+  display: none;
+  gap: 10rem;
+  flex-direction: column;
+}
+
+#indexP {
+  padding-top: 170rem;
+  justify-content: flex-start;
+  margin-left: 18rem;
+  align-items: center;
+}
+
+#indexP p {
+    width: 346rem;
+}
+
+#indexCards {
+  height: 2085rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#card{
+  position: relative;
+}
+
+.card_1, .card_2, .card_3, .card_4, .card_5, .card_6, .card_7{
+  margin-top: 0rem;
+  margin-left: 0rem;
+}
+
+#indexForm {
+  height: 300rem;
+  padding: 0 18rem;
+}
+
+#indexForm h1{
+  width: 310rem;
+}
+
+#indexForm p{
+  width: 340rem;
+}
+
+#my-form {
+  width: 365rem;
+  padding: 10rem;
+  align-items: center;
+  gap: 7.5rem;
+  border-radius: 26rem;
+  margin-top: 22.5rem;
+  flex-direction: column;
+}
+
+#indexHeader{
+  display: none;
+}
+
+#indexHeaderMob{
+  display: flex;
+  align-items: flex-start;
+}
+
+#menu{
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  margin-top: 20rem;
+  cursor: pointer;
+}
 }
 
 
